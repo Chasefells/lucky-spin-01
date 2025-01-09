@@ -18,11 +18,6 @@ if (!app.Environment.IsDevelopment()) {
 }
 //   TODO: add Routing to recognize custom "Routes" in place of folders and files
 
-
-
-//Configure Routing with a general pattern and a default setting if the URL path is left out
- // FIXME:if your have time, add a range(1,9) method to constrain luck between 1 and 9
-
 app.MapControllerRoute(
     name: "default",
     pattern: "{controller}/{action}/{luck}",
@@ -32,6 +27,11 @@ app.MapControllerRoute(
         action = "Index",
         luck = 7
     });
+
+//Configure Routing with a general pattern and a default setting if the URL path is left out
+ // FIXME:if your have time, add a range(1,9) method to constrain luck between 1 and 9
+
+
 
 app.Run();
 
