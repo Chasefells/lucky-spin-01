@@ -25,7 +25,7 @@ System.Text.StringBuilder htmlToShow =
           htmlToShow.Append("<img src='http://studentfolders.cascadia.edu/itweb285/LuckySpinCoins.jpg'/></body>");
           };
 
-            //TODO: Modify this to use the string builder's response string as the Content property's value
+            //Done: Modify this to use the string builder's response string as the Content property's value
                 return new ContentResult 
             { 
                 Content = htmlToShow.ToString(), 
